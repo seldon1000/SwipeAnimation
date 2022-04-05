@@ -10,7 +10,7 @@ SwipeAnimation is a XCode project, containing an application prototype showcasin
 
 This animation is a simple swipe. Here, you use swipes to move vertically or horizontally and you move through all the available space, until you find an obstacles (dark dots in our case). The swipe should be quick but consistently animated, using colors, scale effect and overlays, with timed UI changes. Let's take a look.
 
-![Alt Text](https://github.com/seldon1000/SwiftUI_Animations/blob/main/ezgif-1-529eaaadff.gif)
+![Alt Text](https://github.com/seldon1000/SwipeAnimation/blob/main/swipe.gif)
 
 This animation comes with a lot of headackes. Let's see why. First things first, we have a grid @State variable, of type Grid. Grid is a custom class I created that manages the whole "gameplay" and the grid you play inside. Let's see what it actually does. Below you can take a look to its members and initializer. The ```currentDot``` variable contains the coordinates of the current dot inside the grid and is marked @Published, meaning that everytime it changes, the UI will refresh too, according to the changes. ```dotsToWin``` counts the dots left to be colored. ```dots``` holds the whole grid of dots, our environment. ```startDot``` holds the coordinates of the dot where you start playing. ```rows``` and ```cols``` hold the dimensions of the grid. The initialiser will take a Level object, which holds information about how the grid should look like.
 
