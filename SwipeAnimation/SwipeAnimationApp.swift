@@ -8,10 +8,12 @@
 import SwiftUI
 
 @main
-struct SwipeAnimationApp: App {
+struct SwiftUI_AnimationsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Start()
+                .preferredColorScheme(.light)
+                .statusBar(hidden: true)
         }
     }
 }
